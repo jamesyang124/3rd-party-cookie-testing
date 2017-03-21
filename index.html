@@ -3,7 +3,7 @@
   <body>
     <script>
       document.cookie="setCookie=yes";
-      
+      alert(document.cookie); 
       if (/setCookie=yes/.test(document.cookie)) {
         console.log("embedded resource allow to set cookie");  
       } else {
