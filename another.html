@@ -1,9 +1,9 @@
 <body>
   <script>
     if (window.parent) {
-      document.cookie = "hello=2134";
+      // document.cookie = "hello=2134";
 
-      alert(document.cookie);
+      // alert(document.cookie);
 
       if (/setCookie=yes/.test(document.cookie)) {
         window.parent.postMessage('isEnable', '*');
