@@ -3,11 +3,13 @@
     if (window.parent) {
       // document.cookie = "hello=2134";
 
-      //alert(document.cookie);
+      alert(document.cookie);
 
       if (/setCookie=yes/.test(document.cookie)) {
+        console.log("another html not blocking isEnable");
         window.parent.postMessage('isEnable', '*');
       } else {
+        console.log("another html not blocking isDisable");
         window.parent.postMessage('isDisable', '*');
       }
     }
