@@ -3,7 +3,9 @@
     if (window.parent) {
       // document.cookie = "hello=2134";
 
-      alert(document.cookie);
+      // UI event will blocked current window, for man site it will not able to listen the post Message event
+      // During that time, so we lost the message in main site which here already fired.
+      //alert(document.cookie);
 
       if (/setCookie=yes/.test(document.cookie)) {
         console.log("another html not blocking isEnable");
